@@ -16,7 +16,7 @@ export const Hero = () => {
       </div>
 
       <div className="container relative z-10 mx-auto px-4 py-20 md:py-32 lg:py-40">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto text-center">
           <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-4 animate-fade-in-up">
             Партнер.КОМ
           </p>
@@ -25,12 +25,12 @@ export const Hero = () => {
               ? "Сделки с крупными активами — надёжно и конфиденциально"
               : "Major Asset Deals — Reliable & Confidential"}
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/60 mb-10 max-w-2xl animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-lg md:text-xl text-primary-foreground/60 mb-10 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             {lang === "ru"
-              ? "Профессиональный посредник в сделках с бизнесами, недвижимостью и инвестиционными активами от ₽300 млн"
-              : "Professional intermediary in business, real estate and investment asset transactions from ₽300M"}
+              ? "Профессиональный посредник в сделках с бизнесами, недвижимостью и инвестиционными активами от ₽100 млн"
+              : "Professional intermediary in business, real estate and investment asset transactions from ₽100M"}
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <Button variant="gold" size="lg" asChild>
               <Link to="/investors">
                 {lang === "ru" ? "Инвестору" : "For Investors"}
