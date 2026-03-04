@@ -26,8 +26,8 @@ const About = () => {
           </h1>
           <p className="text-lg text-primary-foreground/60 max-w-2xl">
             {lang === "ru"
-              ? "С 2012 года мы помогаем предпринимателям, инвесторам и собственникам совершать сделки с активами стоимостью от ₽300 млн."
-              : "Since 2012, we've been helping entrepreneurs, investors and owners execute asset transactions worth ₽300M and above."}
+              ? "С 2010 года мы помогаем предпринимателям, инвесторам и собственникам совершать сделки с активами стоимостью от ₽100 млн."
+              : "Since 2010, we've been helping entrepreneurs, investors and owners execute asset transactions worth ₽100M and above."}
           </p>
         </div>
       </section>
@@ -54,10 +54,9 @@ const About = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { value: "₽48 млрд", label: { ru: "объём сделок", en: "deal volume" } },
-                { value: "150+", label: { ru: "закрытых сделок", en: "closed deals" } },
-                { value: "40+", label: { ru: "регионов", en: "regions" } },
-                { value: "12 лет", label: { ru: "на рынке", en: "in market" } },
+                { value: "10 000+", label: { ru: "закрытых сделок", en: "closed deals" } },
+                { value: "80", label: { ru: "регионов России", en: "regions of Russia" } },
+                { value: "15 лет", label: { ru: "на рынке", en: "in market" } },
               ].map((s, i) => (
                 <div key={i} className="bg-card border border-border rounded-lg p-5 text-center">
                   <div className="text-2xl font-bold text-gold-gradient">{s.value}</div>
