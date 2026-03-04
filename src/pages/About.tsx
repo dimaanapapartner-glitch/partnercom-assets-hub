@@ -26,8 +26,8 @@ const About = () => {
           </h1>
           <p className="text-lg text-primary-foreground/60 max-w-2xl">
             {lang === "ru"
-              ? "С 2012 года мы помогаем предпринимателям, инвесторам и собственникам совершать сделки с активами стоимостью от ₽300 млн."
-              : "Since 2012, we've been helping entrepreneurs, investors and owners execute asset transactions worth ₽300M and above."}
+              ? "С 2010 года мы помогаем предпринимателям, инвесторам и собственникам совершать сделки с активами стоимостью от ₽100 млн."
+              : "Since 2010, we've been helping entrepreneurs, investors and owners execute asset transactions worth ₽100M and above."}
           </p>
         </div>
       </section>
