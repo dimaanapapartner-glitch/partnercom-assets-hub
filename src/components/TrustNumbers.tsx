@@ -1,10 +1,9 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const stats = [
-  { value: "150+", label: { ru: "Закрытых сделок", en: "Closed Deals" } },
-  { value: "₽48 млрд", label: { ru: "Объём сделок", en: "Deal Volume" } },
-  { value: "12", label: { ru: "Лет на рынке", en: "Years in Market" } },
-  { value: "40+", label: { ru: "Регионов РФ", en: "Regions Covered" } },
+  { value: "10 000+", label: { ru: "Закрытых сделок", en: "Closed Deals" } },
+  { value: "15", label: { ru: "Лет на рынке", en: "Years in Market" } },
+  { value: "80", label: { ru: "Регионов России", en: "Regions of Russia" } },
 ];
 
 export const TrustNumbers = () => {
