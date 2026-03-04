@@ -1,7 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Asset } from "@/data/assets";
 import { Button } from "@/components/ui/button";
-import { Building2, Factory, Hotel, Wheat, Warehouse, ShoppingBag } from "lucide-react";
+import { Building2, Factory, Hotel, Wheat, Warehouse, ShoppingBag, LandPlot } from "lucide-react";
 
 const typeIcons: Record<string, React.ReactNode> = {
   "Производство": <Factory className="w-8 h-8" />,
@@ -10,6 +10,7 @@ const typeIcons: Record<string, React.ReactNode> = {
   "Сельское хозяйство": <Wheat className="w-8 h-8" />,
   "Логистика": <Warehouse className="w-8 h-8" />,
   "Ритейл": <ShoppingBag className="w-8 h-8" />,
+  "Участки": <LandPlot className="w-8 h-8" />,
 };
 
 const statusColors: Record<string, string> = {

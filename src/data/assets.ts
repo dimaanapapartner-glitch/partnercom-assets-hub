@@ -19,6 +19,7 @@ export const assetTypeOptions = [
   { ru: "Сельское хозяйство", en: "Agriculture" },
   { ru: "Логистика", en: "Logistics" },
   { ru: "Ритейл", en: "Retail" },
+  { ru: "Участки", en: "Land Plots" },
 ];
 
 export const regionOptions = [
@@ -29,6 +30,28 @@ export const regionOptions = [
   { ru: "Татарстан", en: "Tatarstan" },
   { ru: "Новосибирская обл.", en: "Novosibirsk Oblast" },
   { ru: "Свердловская обл.", en: "Sverdlovsk Oblast" },
+  { ru: "Ростовская обл.", en: "Rostov Oblast" },
+  { ru: "Нижегородская обл.", en: "Nizhny Novgorod Oblast" },
+  { ru: "Самарская обл.", en: "Samara Oblast" },
+  { ru: "Челябинская обл.", en: "Chelyabinsk Oblast" },
+  { ru: "Красноярский край", en: "Krasnoyarsk Krai" },
+  { ru: "Пермский край", en: "Perm Krai" },
+  { ru: "Волгоградская обл.", en: "Volgograd Oblast" },
+  { ru: "Воронежская обл.", en: "Voronezh Oblast" },
+  { ru: "Башкортостан", en: "Bashkortostan" },
+  { ru: "Дагестан", en: "Dagestan" },
+  { ru: "Ставропольский край", en: "Stavropol Krai" },
+  { ru: "Тюменская обл.", en: "Tyumen Oblast" },
+  { ru: "Иркутская обл.", en: "Irkutsk Oblast" },
+  { ru: "Омская обл.", en: "Omsk Oblast" },
+  { ru: "Саратовская обл.", en: "Saratov Oblast" },
+  { ru: "Калининградская обл.", en: "Kaliningrad Oblast" },
+  { ru: "Приморский край", en: "Primorsky Krai" },
+  { ru: "Хабаровский край", en: "Khabarovsk Krai" },
+  { ru: "Ленинградская обл.", en: "Leningrad Oblast" },
+  { ru: "Тульская обл.", en: "Tula Oblast" },
+  { ru: "Ярославская обл.", en: "Yaroslavl Oblast" },
+  { ru: "Другой регион", en: "Other Region" },
 ];
 
 export const assets: Asset[] = [
