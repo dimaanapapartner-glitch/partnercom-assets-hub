@@ -8,12 +8,12 @@ const navItems = [
   { path: "/", ru: "Главная", en: "Home" },
   { path: "/about", ru: "О компании", en: "About" },
   { path: "/investors", ru: "Инвесторам", en: "Investors" },
-  { path: "/assets", ru: "Активы", en: "Assets" },
-  { path: "/buyers", ru: "Покупателям", en: "Buyers" },
+  // { path: "/assets", ru: "Активы", en: "Assets" },
+  // { path: "/buyers", ru: "Покупателям", en: "Buyers" },
   { path: "/sellers", ru: "Продавцам", en: "Sellers" },
-  { path: "/cases", ru: "Кейсы", en: "Cases" },
+  // { path: "/cases", ru: "Кейсы", en: "Cases" },
   { path: "/analytics", ru: "Аналитика", en: "Analytics" },
-  { path: "/faq", ru: "FAQ", en: "FAQ" },
+  // { path: "/faq", ru: "FAQ", en: "FAQ" },
   { path: "/contacts", ru: "Контакты", en: "Contacts" },
 ];
 
@@ -27,9 +27,8 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Header */}
       <header className="sticky top-0 z-50 navy-gradient border-b border-gold/10 backdrop-blur-sm">
         <div className="container mx-auto px-4 flex items-center justify-between h-16">
-          <Link to="/" className="text-primary-foreground font-bold text-xl tracking-tight flex items-center gap-2">
-            <span className="text-gold-gradient">Партнер</span>
-            <span className="text-primary-foreground/80">.КОМ</span>
+          <Link to="/" className="flex items-center">
+            <img src="/logo.jpg" alt="Партнер.КОМ" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Nav */}

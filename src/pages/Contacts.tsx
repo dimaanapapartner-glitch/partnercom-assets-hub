@@ -4,9 +4,9 @@ import { ContactForm } from "@/components/ContactForm";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const contactInfo = [
-  { icon: Phone, label: { ru: "Телефон", en: "Phone" }, value: "+7 (___) ___-__-__" },
+  { icon: Phone, label: { ru: "Телефон", en: "Phone" }, value: "+7 (988) 330-20-12" },
   { icon: Mail, label: { ru: "Email", en: "Email" }, value: "info@partner.com" },
-  { icon: MapPin, label: { ru: "Адрес", en: "Address" }, value: { ru: "Москва, ул. ___________, д. __", en: "Moscow, _________ St., bld. __" } },
+  { icon: MapPin, label: { ru: "Адрес", en: "Address" }, value: { ru: "Москва, ул. Ленинский пр-т, д. 158", en: "Moscow, Lenin prospekt., bld. 158" } },
   { icon: Clock, label: { ru: "Режим работы", en: "Working Hours" }, value: { ru: "Пн–Пт: 9:00–19:00", en: "Mon–Fri: 9:00–19:00" } },
 ];
 

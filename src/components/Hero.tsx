@@ -8,6 +8,10 @@ export const Hero = () => {
 
   return (
     <section className="relative navy-gradient text-primary-foreground overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/img/main.webp')" }} />
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50" />
       {/* Decorative circles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full border border-accent/10" />
@@ -22,12 +26,12 @@ export const Hero = () => {
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
             {lang === "ru"
-              ? "Сделки с крупными активами — надёжно и конфиденциально"
+              ? "Сделки с крупными активами — надёжность в партнёрстве"
               : "Major Asset Deals — Reliable & Confidential"}
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/60 mb-10 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             {lang === "ru"
-              ? "Профессиональный посредник в сделках с бизнесами, недвижимостью и инвестиционными активами от ₽100 млн"
+              ? "Стратегический партнёр в сделках с бизнесами, недвижимостью и инвестиционными активами от 100 млн. ₽"
               : "Professional intermediary in business, real estate and investment asset transactions from ₽100M"}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
@@ -37,9 +41,9 @@ export const Hero = () => {
                 <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </Button>
-            <Button variant="heroOutline" size="lg" asChild>
+            {/*<Button variant="heroOutline" size="lg" asChild>
               <Link to="/buyers">{lang === "ru" ? "Покупателю" : "For Buyers"}</Link>
-            </Button>
+            </Button>*/}
             <Button variant="heroOutline" size="lg" asChild>
               <Link to="/sellers">{lang === "ru" ? "Продавцу" : "For Sellers"}</Link>
             </Button>

@@ -29,6 +29,11 @@ const About = () => {
               ? "С 2010 года мы помогаем предпринимателям, инвесторам и собственникам совершать сделки с активами стоимостью от ₽100 млн."
               : "Since 2010, we've been helping entrepreneurs, investors and owners execute asset transactions worth ₽100M and above."}
           </p>
+          <p className="text-lg text-primary-foreground/60 max-w-2xl">
+            {lang === "ru"
+              ? "Основная задача - объединение владельцев активов, инвесторов, девелоперов, деловых организаций и профессиональных сервисных компаний в единую партнерскую экосистему, ориентированную на работу с крупными инвестиционными объектами."
+              : "The main objective is to unite asset owners, investors, developers, business organizations, and professional service companies into a single partner ecosystem focused on working with large investment projects."}
+          </p>
         </div>
       </section>
 
@@ -50,6 +55,17 @@ const About = () => {
                     ? "Наша команда состоит из профессионалов с опытом в инвестиционном банкинге, консалтинге и юриспруденции. Мы понимаем специфику каждой отрасли и региона."
                     : "Our team consists of professionals with experience in investment banking, consulting and law. We understand the specifics of each industry and region."}
                 </p>
+                <p>
+                  {lang === "ru"
+                    ? "Наша команда состоит из профессионалов с опытом в инвестиционном банкинге, консалтинге и юриспруденции. Мы понимаем специфику каждой отрасли и региона."
+                    : "Our team consists of professionals with experience in investment banking, consulting and law. We understand the specifics of each industry and region."}
+                </p>
+                <p>
+                  {lang === "ru"
+                    ? "Эффективно взаимодействуем с крупнейшими банками, инвестиционными фондами, институциональными инвесторами, архитектурными бюро, строительными организациями."
+                    : "We effectively collaborate with leading banks, investment funds, institutional investors, architectural firms, and construction companies."}
+                </p>
+
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">

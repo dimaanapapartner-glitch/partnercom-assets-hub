@@ -1,13 +1,20 @@
 import { Layout } from "@/components/Layout";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { ContactForm } from "@/components/ContactForm";
-import { TrendingUp, Shield, Search, BarChart3 } from "lucide-react";
+import { TrendingUp, Shield, Search, BarChart3, FileCheck, Scale, Headphones } from "lucide-react";
 
 const benefits = [
   { icon: Search, title: { ru: "Доступ к эксклюзивным объектам", en: "Exclusive Object Access" }, desc: { ru: "Получите доступ к активам, которые не представлены на открытом рынке", en: "Access assets not available on the open market" } },
   { icon: BarChart3, title: { ru: "Глубокая аналитика", en: "Deep Analytics" }, desc: { ru: "Детальные инвестиционные меморандумы с финансовыми моделями", en: "Detailed investment memorandums with financial models" } },
   { icon: Shield, title: { ru: "Due Diligence", en: "Due Diligence" }, desc: { ru: "Комплексная проверка всех аспектов актива до сделки", en: "Comprehensive verification of all asset aspects before the deal" } },
   { icon: TrendingUp, title: { ru: "Оптимизация условий", en: "Terms Optimization" }, desc: { ru: "Структурирование сделок для максимальной доходности", en: "Deal structuring for maximum returns" } },
+
+  { icon: Search, title: { ru: "Подбор по критериям", en: "Support by criteria" }, desc: { ru: "Находим объекты, точно соответствующие вашим инвестиционным критериям", en: "We find properties that exactly match your investment criteria" } },
+
+  { icon: FileCheck, title: { ru: "Проверенные активы", en: "Verified assets" }, desc: { ru: "Все активы проходят предварительную проверку перед представлением", en: "All assets are pre-screened before submission." } },
+  { icon: Scale, title: { ru: "Справедливая цена", en: "Fair price" }, desc: { ru: "Независимая оценка гарантирует объективную стоимость актива", en: "An independent assessment guarantees an objective value of the asset" } },
+  { icon: Headphones, title: { ru: "Полное сопровождение", en: "Full support" }, desc: { ru: "Юридическое и финансовое сопровождение на всех этапах сделки", en: "Legal and financial support at all stages of the transaction" } },
+
 ];
 
 const Investors = () => {
@@ -22,12 +29,12 @@ const Investors = () => {
           </p>
           <h1 className="text-3xl md:text-5xl font-bold max-w-3xl mb-6">
             {lang === "ru"
-              ? "Находим активы с высоким потенциалом доходности"
+              ? "Найдите идеальный актив для вашего портфеля"
               : "Finding Assets with High Return Potential"}
           </h1>
           <p className="text-lg text-primary-foreground/60 max-w-2xl">
             {lang === "ru"
-              ? "Мы отбираем инвестиционные возможности, проводим полный due diligence и сопровождаем сделку на всех этапах."
+              ? "Мы отбираем инвестиционные возможности, проводим полный due diligence и сопровождаем сделку на всех этапах. Предоставляем доступ к широкому выбору проверенных активов с полной документацией и прозрачной историей"
               : "We select investment opportunities, conduct full due diligence and support the deal at every stage."}
           </p>
         </div>

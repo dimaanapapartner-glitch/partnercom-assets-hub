@@ -4,10 +4,10 @@ import { ContactForm } from "@/components/ContactForm";
 import { Lock, TrendingUp, Users, Clock } from "lucide-react";
 
 const benefits = [
-  { icon: TrendingUp, title: { ru: "Максимальная цена", en: "Maximum Price" }, desc: { ru: "Профессиональная оценка и создание конкурентной среды между покупателями", en: "Professional valuation and creating competitive environment among buyers" } },
+  { icon: TrendingUp, title: { ru: "Реальная цена", en: "Real Price" }, desc: { ru: "Профессиональная оценка и создание конкурентной среды между покупателями", en: "Professional valuation and creating competitive environment among buyers" } },
   { icon: Lock, title: { ru: "Конфиденциальность", en: "Confidentiality" }, desc: { ru: "Информация о продаже не попадёт на открытый рынок без вашего согласия", en: "Sale information won't reach the open market without your consent" } },
-  { icon: Users, title: { ru: "База покупателей", en: "Buyer Database" }, desc: { ru: "Более 2 000 верифицированных покупателей и инвесторов в нашей базе", en: "Over 2,000 verified buyers and investors in our database" } },
-  { icon: Clock, title: { ru: "Скорость", en: "Speed" }, desc: { ru: "Средний срок закрытия сделки — 4–6 месяцев", en: "Average deal closing time — 4-6 months" } },
+  { icon: Users, title: { ru: "База покупателей", en: "Buyer Database" }, desc: { ru: "Более 2 000 институциональных покупателей и инвесторов в нашей базе", en: "Over 2,000 verified buyers and investors in our database" } },
+  // { icon: Clock, title: { ru: "Скорость", en: "Speed" }, desc: { ru: "Средний срок закрытия сделки — 4–6 месяцев", en: "Average deal closing time — 4-6 months" } },
 ];
 
 const Sellers = () => {
@@ -22,8 +22,8 @@ const Sellers = () => {
           </p>
           <h1 className="text-3xl md:text-5xl font-bold max-w-3xl mb-6">
             {lang === "ru"
-              ? "Продайте актив по максимальной цене"
-              : "Sell Your Asset at Maximum Price"}
+              ? "Продайте актив по реальной цене"
+              : "Sell Your Asset at Real Price"}
           </h1>
           <p className="text-lg text-primary-foreground/60 max-w-2xl">
             {lang === "ru"
