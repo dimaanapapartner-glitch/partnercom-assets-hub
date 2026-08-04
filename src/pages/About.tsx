@@ -3,10 +3,38 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Shield, Eye, Target, Users } from "lucide-react";
 
 const values = [
-  { icon: Shield, title: { ru: "Надёжность", en: "Reliability" }, desc: { ru: "Каждая сделка сопровождается комплексной юридической проверкой", en: "Every deal is accompanied by comprehensive legal due diligence" } },
-  { icon: Eye, title: { ru: "Конфиденциальность", en: "Confidentiality" }, desc: { ru: "Строгое соблюдение NDA на всех этапах переговоров", en: "Strict NDA compliance at all negotiation stages" } },
-  { icon: Target, title: { ru: "Результат", en: "Results" }, desc: { ru: "Ориентация на максимальную стоимость и оптимальные условия", en: "Focus on maximum value and optimal conditions" } },
-  { icon: Users, title: { ru: "Партнёрство", en: "Partnership" }, desc: { ru: "Долгосрочные отношения с клиентами и участниками рынка", en: "Long-term relationships with clients and market participants" } },
+  {
+    icon: Shield,
+    title: { ru: "Надёжность", en: "Reliability" },
+    desc: {
+      ru: "Каждая сделка сопровождается комплексной юридической проверкой",
+      en: "Every deal is accompanied by comprehensive legal due diligence",
+    },
+  },
+  {
+    icon: Eye,
+    title: { ru: "Конфиденциальность", en: "Confidentiality" },
+    desc: {
+      ru: "Строгое соблюдение NDA на всех этапах переговоров",
+      en: "Strict NDA compliance at all negotiation stages",
+    },
+  },
+  {
+    icon: Target,
+    title: { ru: "Результат", en: "Results" },
+    desc: {
+      ru: "Ориентация на максимальную стоимость и оптимальные условия",
+      en: "Focus on maximum value and optimal conditions",
+    },
+  },
+  {
+    icon: Users,
+    title: { ru: "Партнёрство", en: "Partnership" },
+    desc: {
+      ru: "Долгосрочные отношения с клиентами и участниками рынка",
+      en: "Long-term relationships with clients and market participants",
+    },
+  },
 ];
 
 const About = () => {
@@ -57,26 +85,33 @@ const About = () => {
                 </p>
                 <p>
                   {lang === "ru"
-                    ? "Наша команда состоит из профессионалов с опытом в инвестиционном банкинге, консалтинге и юриспруденции. Мы понимаем специфику каждой отрасли и региона."
-                    : "Our team consists of professionals with experience in investment banking, consulting and law. We understand the specifics of each industry and region."}
-                </p>
-                <p>
-                  {lang === "ru"
                     ? "Эффективно взаимодействуем с крупнейшими банками, инвестиционными фондами, институциональными инвесторами, архитектурными бюро, строительными организациями."
                     : "We effectively collaborate with leading banks, investment funds, institutional investors, architectural firms, and construction companies."}
                 </p>
-
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { value: "10 000+", label: { ru: "закрытых сделок", en: "closed deals" } },
-                { value: "80", label: { ru: "регионов России", en: "regions of Russia" } },
+                {
+                  value: "10 000+",
+                  label: { ru: "закрытых сделок", en: "closed deals" },
+                },
+                {
+                  value: "80",
+                  label: { ru: "регионов России", en: "regions of Russia" },
+                },
                 { value: "15 лет", label: { ru: "на рынке", en: "in market" } },
               ].map((s, i) => (
-                <div key={i} className="bg-card border border-border rounded-lg p-5 text-center">
-                  <div className="text-2xl font-bold text-gold-gradient">{s.value}</div>
-                  <div className="text-sm text-muted-foreground mt-1">{s.label[lang]}</div>
+                <div
+                  key={i}
+                  className="bg-card border border-border rounded-lg p-5 text-center"
+                >
+                  <div className="text-2xl font-bold text-gold-gradient">
+                    {s.value}
+                  </div>
+                  <div className="text-sm text-muted-foreground mt-1">
+                    {s.label[lang]}
+                  </div>
                 </div>
               ))}
             </div>
@@ -93,12 +128,17 @@ const About = () => {
             {values.map((v, i) => {
               const Icon = v.icon;
               return (
-                <div key={i} className="bg-background rounded-lg p-6 border border-border text-center">
+                <div
+                  key={i}
+                  className="bg-background rounded-lg p-6 border border-border text-center"
+                >
                   <div className="w-12 h-12 mx-auto rounded-lg navy-gradient flex items-center justify-center text-accent mb-4">
                     <Icon className="w-5 h-5" />
                   </div>
                   <h3 className="font-bold mb-2">{v.title[lang]}</h3>
-                  <p className="text-sm text-muted-foreground">{v.desc[lang]}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {v.desc[lang]}
+                  </p>
                 </div>
               );
             })}

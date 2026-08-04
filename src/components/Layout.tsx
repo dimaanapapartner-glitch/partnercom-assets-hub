@@ -60,7 +60,11 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
               className="lg:hidden text-primary-foreground"
               onClick={() => setMobileOpen(!mobileOpen)}
             >
-              {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
@@ -111,9 +115,24 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                 {lang === "ru" ? "Услуги" : "Services"}
               </h4>
               <div className="flex flex-col gap-2 text-sm">
-                <Link to="/investors" className="hover:text-accent transition-colors">{lang === "ru" ? "Инвесторам" : "Investors"}</Link>
-                <Link to="/buyers" className="hover:text-accent transition-colors">{lang === "ru" ? "Покупателям" : "Buyers"}</Link>
-                <Link to="/sellers" className="hover:text-accent transition-colors">{lang === "ru" ? "Продавцам" : "Sellers"}</Link>
+                <Link
+                  to="/investors"
+                  className="hover:text-accent transition-colors"
+                >
+                  {lang === "ru" ? "Инвесторам" : "Investors"}
+                </Link>
+                <Link
+                  to="/buyers"
+                  className="hover:text-accent transition-colors"
+                >
+                  {lang === "ru" ? "Покупателям" : "Buyers"}
+                </Link>
+                <Link
+                  to="/sellers"
+                  className="hover:text-accent transition-colors"
+                >
+                  {lang === "ru" ? "Продавцам" : "Sellers"}
+                </Link>
               </div>
             </div>
             <div>
@@ -121,9 +140,26 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                 {lang === "ru" ? "Компания" : "Company"}
               </h4>
               <div className="flex flex-col gap-2 text-sm">
-                <Link to="/about" className="hover:text-accent transition-colors">{lang === "ru" ? "О нас" : "About"}</Link>
-                <Link to="/cases" className="hover:text-accent transition-colors">{lang === "ru" ? "Кейсы" : "Cases"}</Link>
-                <Link to="/privacy" className="hover:text-accent transition-colors">{lang === "ru" ? "Политика конфиденциальности" : "Privacy Policy"}</Link>
+                <Link
+                  to="/about"
+                  className="hover:text-accent transition-colors"
+                >
+                  {lang === "ru" ? "О нас" : "About"}
+                </Link>
+                <Link
+                  to="/cases"
+                  className="hover:text-accent transition-colors"
+                >
+                  {lang === "ru" ? "Кейсы" : "Cases"}
+                </Link>
+                <Link
+                  to="/privacy"
+                  className="hover:text-accent transition-colors"
+                >
+                  {lang === "ru"
+                    ? "Политика конфиденциальности"
+                    : "Privacy Policy"}
+                </Link>
               </div>
             </div>
             <div>
@@ -131,14 +167,21 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
                 {lang === "ru" ? "Контакты" : "Contacts"}
               </h4>
               <div className="flex flex-col gap-2 text-sm">
-                <span>+7 (___) ___-__-__</span>
-                <span>info@partner.com</span>
-                <span>{lang === "ru" ? "Москва, Россия" : "Moscow, Russia"}</span>
+                <span>+7 (988) 330-20-12</span>
+                <span>
+                  dimapartnercom@ya.ru
+                  <br />
+                  info@партнер.com
+                </span>
+                <span>
+                  {lang === "ru" ? "Москва, Россия" : "Moscow, Russia"}
+                </span>
               </div>
             </div>
           </div>
           <div className="border-t border-primary-foreground/10 mt-8 pt-8 text-sm text-center">
-            © {new Date().getFullYear()} Партнер.КОМ. {lang === "ru" ? "Все права защищены." : "All rights reserved."}
+            © {new Date().getFullYear()} Партнер.КОМ.{" "}
+            {lang === "ru" ? "Все права защищены." : "All rights reserved."}
           </div>
         </div>
       </footer>
