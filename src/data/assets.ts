@@ -77,10 +77,10 @@ export const assets: Asset[] = [
   },
   {
     id: "2",
-    title: { ru: "Бизнес-центр «Горизонт»", en: "Horizon Business Center" },
+    title: { ru: "Бизнес-центр", en: "Business Center" },
     type: { ru: "Коммерческая недвижимость", en: "Commercial Real Estate" },
     region: { ru: "Москва и МО", en: "Moscow Region" },
-    price: "₽ 2.1 млрд",
+    price: "₽ 9.1 млрд",
     priceValue: 2100,
     status: "sale",
     description: {
@@ -88,7 +88,7 @@ export const assets: Asset[] = [
       en: "Class A, 18 floors, 96% occupancy. Anchor tenants — international companies.",
     },
     metrics: [
-      { label: { ru: "Площадь", en: "Area" }, value: "32 000 м²" },
+      { label: { ru: "Площадь", en: "Area" }, value: "11 000 м²" },
       { label: { ru: "Заполняемость", en: "Occupancy" }, value: "96%" },
       { label: { ru: "NOI", en: "NOI" }, value: "₽ 380 млн" },
       { label: { ru: "Cap Rate", en: "Cap Rate" }, value: "9.2%" },
@@ -100,15 +100,15 @@ export const assets: Asset[] = [
     title: { ru: "Курортный комплекс", en: "Resort Complex" },
     type: { ru: "Гостиничный бизнес", en: "Hospitality" },
     region: { ru: "Краснодарский край", en: "Krasnodar Krai" },
-    price: "₽ 1.4 млрд",
-    priceValue: 1400,
-    status: "negotiation",
+    price: "₽ 1.5 млрд",
+    priceValue: 1500,
+    status: "sale",
     description: {
-      ru: "4-звёздочный курортный комплекс на черноморском побережье. 220 номеров, SPA, ресторан.",
-      en: "4-star resort complex on the Black Sea coast. 220 rooms, SPA, restaurant.",
+      ru: "4-звёздочный курортный комплекс на черноморском побережье. 204 номеров, SPA, ресторан.",
+      en: "4-star resort complex on the Black Sea coast. 204 rooms, SPA, restaurant.",
     },
     metrics: [
-      { label: { ru: "Номера", en: "Rooms" }, value: "220" },
+      { label: { ru: "Номера", en: "Rooms" }, value: "204" },
       { label: { ru: "Выручка", en: "Revenue" }, value: "₽ 640 млн" },
       { label: { ru: "Загрузка", en: "Occupancy" }, value: "78%" },
       { label: { ru: "Персонал", en: "Staff" }, value: "180" },
@@ -171,5 +171,23 @@ export const assets: Asset[] = [
       { label: { ru: "EBITDA", en: "EBITDA" }, value: "₽ 120 млн" },
       { label: { ru: "Персонал", en: "Staff" }, value: "560" },
     ],
+  },
+  {
+    id: "7",
+    title: { ru: "Земельный участок под базу отдыха", en: "Land Plot for a Recreation Center" },
+    type: { ru: "Участки", en: "Land Plots" },
+    region: { ru: "Другой регион", en: "Other Region" },
+    price: "₽ 350 млн",
+    priceValue: 350,
+    status: "sale",
+    description: {
+      ru: "Земельный участок площадью 10 га для строительства базы отдыха.",
+      en: "A 10 ha land plot intended for the construction of a recreation center.",
+    },
+    metrics: [
+      { label: { ru: "Площадь", en: "Area" }, value: "10 га" },
+      { label: { ru: "Стоимость", en: "Price" }, value: "₽ 350 млн" },
+    ],
+    featured: true
   },
 ];

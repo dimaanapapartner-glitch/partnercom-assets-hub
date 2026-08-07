@@ -1,10 +1,75 @@
-import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
+import { MessageCircle, Phone, Send } from "lucide-react";
 
+const contactLinks = [
+  {
+    href: "https://wa.me/79883302012",
+    label: "WhatsApp",
+    icon: MessageCircle,
+  },
+  {
+    href: "https://t.me/dimaokey78",
+    label: "Telegram",
+    icon: Send,
+  },
+  // {
+  //   href: "https://web.max.ru/58613602",
+  //   label: "MAX",
+  //   icon: MessageSquare,
+  // },
+];
+
+export const ContactForm = ({ className = "" }: { className?: string }) => {
+  const { lang } = useLanguage();
+
+  return (
+    <section className={`section-padding ${className}`}>
+      <div className="container mx-auto">
+        <div className="max-w-2xl mx-auto text-center">
+          <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-2">
+            {lang === "ru" ? "Свяжитесь с нами" : "Get in Touch"}
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            {lang === "ru" ? "Будем на связи" : "Contact Us"}
+          </h2>
+          <p className="text-muted-foreground mt-3">
+            {lang === "ru"
+              ? "Позвоните нам или напишите в удобном мессенджере"
+              : "Call us or message us using your preferred messenger"}
+          </p>
+
+          <a
+            href="tel:+79883302012"
+            className="inline-flex items-center gap-3 mt-8 text-2xl md:text-3xl font-bold text-foreground hover:text-accent transition-colors"
+          >
+            <Phone className="w-7 h-7 text-accent" />
+            +7 (988) 330-20-12
+          </a>
+
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mt-8">
+            {contactLinks.map(({ href, label, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center gap-2 min-h-11 px-5 py-2.5 rounded-md border border-border bg-background font-semibold text-foreground hover:border-accent hover:text-accent transition-colors"
+              >
+                <Icon className="w-5 h-5" />
+                {label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/*
+ * Временно скрытая форма заявки. Для возврата формы восстановите этот вариант
+ * компонента и импорты useState, Button, Input, Textarea и useToast.
+ *
 export const ContactForm = ({ className = "" }: { className?: string }) => {
   const { lang } = useLanguage();
   const { toast } = useToast();
@@ -72,3 +137,4 @@ export const ContactForm = ({ className = "" }: { className?: string }) => {
     </section>
   );
 };
+*/
